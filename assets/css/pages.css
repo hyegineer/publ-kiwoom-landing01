@@ -1,0 +1,116 @@
+.intro-section {
+  padding: 43px 0;
+  margin-bottom: 15px;
+}
+
+.intro-title-wrap {
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  color: #171717;
+  margin-bottom: 60px;
+}
+.intro-title-wrap .title {
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -0.31px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.intro-title-wrap .sub-title {
+  font-size: 21px;
+  letter-spacing: -0.21px;
+  margin-bottom: 5px;
+  display: inline-block;
+  line-height: 1.3;
+}
+.intro-title-wrap .title-desc {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 55px;
+  margin-bottom: 50px;
+}
+.intro-content .img {
+  flex-shrink: 0;
+}
+
+.benefit-list-grp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.benefit-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+  line-height: 1.4;
+  color: #171717;
+}
+.benefit-list .ttl {
+  color: #001E5A;
+  font-weight: 600;
+}
+
+.detail-section {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.detail-section .section-title-wrap {
+  margin-bottom: 35px;
+}
+.detail-section .banner {
+  margin-top: 50px;
+}
+
+.detail-content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 35px;
+  width: 100%;
+}
+.detail-content-container .detail-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.detail-content-container .detail-title .icon-title {
+  height: 23px;
+}
+.detail-content-container .detail-title .title {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.21px;
+  color: #171717;
+}
+.detail-content-container .detail-content .txt {
+  font-size: 17px;
+  letter-spacing: -0.17px;
+  color: #171717;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.event-banner-container {
+  width: 100%;
+}
+
+.event-banner-container .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
