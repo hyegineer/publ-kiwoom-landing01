@@ -107,10 +107,60 @@
 
 .event-banner-container {
   width: 100%;
+  padding: 0 50px;
+  position: relative;
+  margin-top: 50px;
+}
+.event-banner-container .img-event-banner {
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.event-banner-container .img-event-banner.active {
+  border: 5px solid #E6367E;
+}
+.event-banner-container .event-swiper-prev-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: flex-start;
+  transform: translateY(-50%);
+}
+.event-banner-container .event-swiper-next-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: flex-end;
+  transform: translateY(-50%);
 }
 
-.event-banner-container .swiper-wrapper {
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
+.event-detail-container {
+  padding-bottom: 150px;
+  margin-top: 55px;
+}
+.event-detail-container .dash-list-grp {
+  margin-bottom: 20px;
+}
+.event-detail-container .gray-box {
+  padding: 35px 30px;
+}
+.event-detail-container .title-txt-container .title {
+  letter-spacing: -0.21px;
+  font-size: 21px;
+}
+.event-detail-container .title-txt-container .txt-box {
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+.event-content {
+  display: none;
+}
+
+.event-content.active {
+  display: block;
 }

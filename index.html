@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>키움에셋플래너 임직원 보험 상담</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/ui.css">
     <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="app">
@@ -63,65 +66,67 @@
                 </div>
               </div>
               <div class="floating-logo-wrap">
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-01.png" alt="키움에셋플래너">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-02.png" alt="키움증권">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-03.png" alt="다우데이터">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-04.png" alt="사람인HR">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-05.png" alt="키다리스튜디오">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-06.png" alt="와이즈버즈">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-07.png" alt="한국정보인증">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-08.png" alt="다우기술">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-09.png" alt="사람인HS">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-10.png" alt="키움투자자산운용">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-11.png" alt="키움예스저축은행">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-12.png" alt="레진">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-13.png" alt="키움저축은행">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-14.png" alt="키움캐피탈">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-15.png" alt="키움인베스트먼트">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-16.png" alt="키움에프앤아이">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-17.png" alt="키움프라이빗에쿼티">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-18.png" alt="키움ENS">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-19.png" alt="이매진스">
-                </div>
-                <div class="logo-box">
-                  <img src="assets/images/logo/logo-20.png" alt="이머니">
+                <div class="logo-boxes">
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-01.png" alt="키움에셋플래너">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-02.png" alt="키움증권">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-03.png" alt="다우데이터">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-04.png" alt="사람인HR">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-05.png" alt="키다리스튜디오">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-06.png" alt="와이즈버즈">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-07.png" alt="한국정보인증">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-08.png" alt="다우기술">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-09.png" alt="사람인HS">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-10.png" alt="키움투자자산운용">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-11.png" alt="키움예스저축은행">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-12.png" alt="레진">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-13.png" alt="키움저축은행">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-14.png" alt="키움캐피탈">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-15.png" alt="키움인베스트먼트">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-16.png" alt="키움에프앤아이">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-17.png" alt="키움프라이빗에쿼티">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-18.png" alt="키움ENS">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-19.png" alt="이매진스">
+                  </div>
+                  <div class="logo-box">
+                    <img src="assets/images/logo/logo-20.png" alt="이머니">
+                  </div>
                 </div>
               </div>
             </div>
@@ -487,19 +492,31 @@
                 <div class="event-banner-container">
 
                   <!-- swiper 슬라이드 -->
-                  <div class="swiper">
+                  <div id="swiper-event-banner" class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img src="assets/images/event/event-03-banner.png" alt="시즌 이벤트" class="img-event-banner">
+                        <img src="assets/images/event/event-03-banner.png" alt="시즌 이벤트" class="js-event-banner active img-event-banner">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/images/event/event-04-banner.png" alt="상시 이벤트" class="img-event-banner">
+                        <img src="assets/images/event/event-04-banner.png" alt="상시 이벤트" class="js-event-banner img-event-banner">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/images/event/event-01-banner.png" alt="카톡 채널 이벤트" class="img-event-banner">
+                        <img src="assets/images/event/event-01-banner.png" alt="카톡 채널 이벤트" class="js-event-banner img-event-banner">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/images/event/event-02-banner.png" alt="핫이슈 이벤트" class="img-event-banner">
+                        <img src="assets/images/event/event-02-banner.png" alt="핫이슈 이벤트" class="js-event-banner img-event-banner">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/event/event-03-banner.png" alt="시즌 이벤트" class="js-event-banner active img-event-banner">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/event/event-04-banner.png" alt="상시 이벤트" class="js-event-banner img-event-banner">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/event/event-01-banner.png" alt="카톡 채널 이벤트" class="js-event-banner img-event-banner">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/event/event-02-banner.png" alt="핫이슈 이벤트" class="js-event-banner img-event-banner">
                       </div>
                     </div>
                   </div>
@@ -507,8 +524,12 @@
                   <!-- END swiper 슬라이드 -->
 
                   <!-- swiper 화살표 버튼들 -->
-                  <button type="button" class="event-swiper-prev-btn"></button>
-                  <button type="button" class="event-swiper-next-btn"></button>
+                  <button type="button" class="event-swiper-prev-btn btn">
+                    <img src="assets/images/icon/icon-swiper-prev.svg" alt="이전 가기">
+                  </button>
+                  <button type="button" class="event-swiper-next-btn btn">
+                    <img src="assets/images/icon/icon-swiper-next.svg" alt="다음 가기">
+                  </button>
 
                   <!-- END swiper 화살표 버튼들 -->
                 </div>
@@ -520,8 +541,8 @@
                   <div class="event-contents">
 
                     <!-- 1. 시즌 이벤트 -->
-                    <div class="event-content">
-                      <img src="" alt="이벤트 상세" class="img-detail">
+                    <div class="event-content active">
+                      <img src="assets/images/event/event-03-detail.png" alt="이벤트 상세" class="img-detail">
                       <div class="gray-box">
                         <div class="title-txt-container">
                           <h3 class="title">이벤트 유의사항</h3>
@@ -544,7 +565,7 @@
 
                     <!-- 2. 상시 이벤트 -->
                     <div class="event-content">
-                      <img src="" alt="이벤트 상세" class="img-detail">
+                      <img src="assets/images/event/event-04-detail.png" alt="이벤트 상세" class="img-detail">
                       <div class="gray-box">
                         <div class="title-txt-container">
                           <h3 class="title">이벤트 유의사항</h3>
@@ -567,33 +588,7 @@
 
                     <!-- 3. 카톡 채널 이벤트 -->
                     <div class="event-content">
-                      <img src="" alt="이벤트 상세" class="img-detail">
-                      <div class="gray-box">
-                        <div class="title-txt-container">
-                          <h3 class="title">이벤트 유의사항</h3>
-                          <div class="txt-box">
-                            <ul class="num-list-grp">
-                              <li class="num-list">보험계약 체결 전에 상품설명서 및 약관을 읽어 보시기 바랍니다.</li>
-                              <li class="num-list">키움에셋플래너㈜ 및 소속 보험설계사는 제휴 보험사 상품에 대해 충분히 설명할 의무가 있으므로 가입자는 가입에 앞서 이에 대한
-                                충분한 설명을 받으시기 바랍니다.</li>
-                              <li class="num-list">키움에셋플래너㈜는 다수의 보험사에 대한 보험계약 체결을 대리하는 법인보험대리점(2003058232)이며 계약체결권을 부여받지
-                                아니한 금융상품에 대해서는 계약을 체결할 권
-                                한이 없습니다.</li>
-                              <li class="num-list">키움에셋플래너㈜ 및 소속 보험설계사는 고의 또는 과실로 금융소비자보호에관한법률을 위반하여 금융소비자에게 손해를 발생시킨 경우 그
-                                손해를 배상할 책임이 있습니다. 다
-                                만, 키움에셋플래너㈜ 및 소속 보험설계사가 고의 및 과실이 없음을 입증한 경우에는 그러하지 아니합니다.</li>
-                              <li class="num-list">보험 계약자가 기존 보험 계약을 해지하고, 새로운 보험 계약을 체결할 경우 유의사항은 아래와 같습니다.
-                                <ul>
-                                  <li>질병 이력, 연령 증가 등으로 가입이 거절되거나 보험료가 인상될 수 있습니다.</li>
-                                  <li>가입 상품에 따라 새로운 면책기간 적용 및 보장 제한 등 기타 불이익이 발생할 수 있습니다.</li>
-                                </ul>
-                              </li>
-                              <li class="num-list">본 광고는 키움에셋플래너(주) 광고 심의기준을 준수하였으며, 유효기간은 심의일로부터 1년입니다.</li>
-                            </ul>
-                            <p class="txt">키움에셋플래너 심의필 제OOOOO호 2023.00.00 ~ 2024.00.00</p>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="assets/images/event/event-01-detail.png" alt="이벤트 상세" class="img-detail">
                       <button type="button" class="btn pink-solid-btn">신청 페이지</button>
                     </div>
 
@@ -601,33 +596,7 @@
 
                     <!-- 4. 핫이슈 이벤트 -->
                     <div class="event-content">
-                      <img src="" alt="이벤트 상세" class="img-detail">
-                      <div class="gray-box">
-                        <div class="title-txt-container">
-                          <h3 class="title">이벤트 유의사항</h3>
-                          <div class="txt-box">
-                            <ul class="num-list-grp">
-                              <li class="num-list">보험계약 체결 전에 상품설명서 및 약관을 읽어 보시기 바랍니다.</li>
-                              <li class="num-list">키움에셋플래너㈜ 및 소속 보험설계사는 제휴 보험사 상품에 대해 충분히 설명할 의무가 있으므로 가입자는 가입에 앞서 이에 대한
-                                충분한 설명을 받으시기 바랍니다.</li>
-                              <li class="num-list">키움에셋플래너㈜는 다수의 보험사에 대한 보험계약 체결을 대리하는 법인보험대리점(2003058232)이며 계약체결권을 부여받지
-                                아니한 금융상품에 대해서는 계약을 체결할 권
-                                한이 없습니다.</li>
-                              <li class="num-list">키움에셋플래너㈜ 및 소속 보험설계사는 고의 또는 과실로 금융소비자보호에관한법률을 위반하여 금융소비자에게 손해를 발생시킨 경우 그
-                                손해를 배상할 책임이 있습니다. 다
-                                만, 키움에셋플래너㈜ 및 소속 보험설계사가 고의 및 과실이 없음을 입증한 경우에는 그러하지 아니합니다.</li>
-                              <li class="num-list">보험 계약자가 기존 보험 계약을 해지하고, 새로운 보험 계약을 체결할 경우 유의사항은 아래와 같습니다.
-                                <ul>
-                                  <li>질병 이력, 연령 증가 등으로 가입이 거절되거나 보험료가 인상될 수 있습니다.</li>
-                                  <li>가입 상품에 따라 새로운 면책기간 적용 및 보장 제한 등 기타 불이익이 발생할 수 있습니다.</li>
-                                </ul>
-                              </li>
-                              <li class="num-list">본 광고는 키움에셋플래너(주) 광고 심의기준을 준수하였으며, 유효기간은 심의일로부터 1년입니다.</li>
-                            </ul>
-                            <p class="txt">키움에셋플래너 심의필 제OOOOO호 2023.00.00 ~ 2024.00.00</p>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="assets/images/event/event-02-detail.png" alt="이벤트 상세" class="img-detail">
                       <button type="button" class="btn pink-solid-btn">신청 페이지</button>
                     </div>
 
@@ -650,15 +619,15 @@
       <div class="fixed-btn-wrapper">
         <div class="fixed-btns">
           <button type="button" class="fixed-btn type-dark">
-            <img src="assets/images/icon/icon-fixed-top.svg" alt="위로 가기 아이콘" class="icon">
+            <img src="assets/images/icon/icon-fixed-top.svg" alt="위로 가기 아이콘" class="icon icon-top">
             <span class="txt">TOP</span>
           </button>
           <button type="button" class="fixed-btn type-navy">
-            <img src="assets/images/icon/icon-fixed-event.svg" alt="이벤트 아이콘" class="icon">
+            <img src="assets/images/icon/icon-fixed-event.svg" alt="이벤트 아이콘" class="icon icon-event">
             <span class="txt">EVENT</span>
           </button>
           <button type="button" class="fixed-btn type-pink">
-            <img src="assets/images/icon/icon-fixed-bubbl.svg" alt="말풍선 아이콘" class="icon">
+            <img src="assets/images/icon/icon-fixed-bubbl.svg" alt="말풍선 아이콘" class="icon icon-bubbl">
             <span class="txt">상담신청</span>
           </button>
           <button type="button" class="fixed-btn type-kakao">
@@ -669,5 +638,36 @@
     </div>
 
     <!-- <script src="assets/js/ui.js"></script> -->
+    <script>
+      // 이벤트 배너 슬라이드
+      const swiperEventBanner = new Swiper("#swiper-event-banner", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".event-swiper-next-btn",
+          prevEl: ".event-swiper-prev-btn",
+        },
+      });
+      // 이벤트 배너 클릭시 바뀌기
+      $('.js-event-banner').on('click', function() {
+        $('.js-event-banner').removeClass('active');
+        $(this).addClass('active');
+      })
+    </script>
+    <script>
+      // 롤링 배너 복제본 생성
+      let roller = document.querySelector('.logo-boxes');
+      roller.id = 'roller1'; // 아이디 부여
+      let clone = roller.cloneNode(true)
+      // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
+      clone.id = 'roller2';
+      document.querySelector('.floating-logo-wrap').appendChild(clone); // wrap 하위 자식으로 부착
+      document.querySelector('#roller1').style.left = '0px';
+      document.querySelector('#roller2').style.left = document.querySelector('.logo-boxes').offsetWidth + 'px';
+      // offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+      roller.classList.add('original');
+      clone.classList.add('clone');
+    </script>
   </body>
 </html>
