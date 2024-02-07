@@ -1,3 +1,173 @@
+@charset "UTF-8";
+.form-section {
+  margin-top: 80px;
+  padding-bottom: 150px;
+}
+.form-section .check-txt-list-grp {
+  margin-bottom: 45px;
+}
+.form-section .gray-box {
+  padding: 70px 20px;
+  border-radius: 8px;
+}
+.form-section .form-item-grp {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.form-section .checkbox-item-grp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 26px;
+}
+.form-section .form-agree-container {
+  max-width: 818px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.form-section .title-txt-container {
+  max-width: 818px;
+  width: 95%;
+  margin: 0 auto;
+}
+.form-section .title-txt-container .title {
+  font-size: 17px;
+}
+.form-section .title-txt-container .txt-box {
+  font-size: 13px;
+}
+.form-section .form-btn-wrap {
+  max-width: 818px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.form-item-grp {
+  max-width: 818px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.form-item-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.form-item-row .form-item {
+  width: calc((100% - 40px) / 2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.form-item .form-label {
+  min-width: 80px;
+  padding-right: 10px;
+  padding-top: 10px;
+  color: #333333;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.form-item .form-inp-wrap {
+  width: 100%;
+  min-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form-item .inp-wrap {
+  width: 100%;
+  position: relative;
+}
+.form-item .inp-wrap .form-inp-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.form-inp {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #E4E5EF;
+  height: 37px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+}
+.form-inp::placeholder {
+  color: rgba(51, 51, 51, 0.3);
+}
+.form-inp:focus {
+  border-color: #EC008C;
+}
+
+select.form-inp {
+  /* 아이폰 사파리 보더 없애기 */
+  -webkit-appearance: none;
+  /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;
+  /* 화살표 없애기 for firefox*/
+  appearance: none;
+  /* 화살표 없애기 공통*/
+  background-image: url(../images/icon/icon-select.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  padding-right: 50px;
+  background-size: 12px;
+}
+
+.form-agree-container .checkbox-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.form-agree-container .agree-txt-box {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #E4E5EF;
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 118px;
+  padding: 16px 19px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #313131;
+}
+.form-agree-container .agree-txt-box .num-list-grp .num-list {
+  padding-left: 14px;
+}
+.form-agree-container .agree-txt-box .num-list:nth-child(1):before {
+  content: "1)";
+}
+.form-agree-container .agree-txt-box .num-list-grp .num-list:nth-child(2):before {
+  content: "2)";
+}
+.form-agree-container .agree-txt-box .num-list-grp .num-list:nth-child(3):before {
+  content: "3)";
+}
+.form-agree-container .agree-txt-box .num-list-grp .num-list:nth-child(4):before {
+  content: "4)";
+}
+
 .intro-section {
   padding-top: 43px;
 }
@@ -104,6 +274,10 @@
   margin-bottom: 15px;
 }
 
+.event-section {
+  margin-top: 130px;
+}
+
 .event-banner-container {
   width: 100%;
   padding: 0 50px;
@@ -154,6 +328,9 @@
 .event-detail-container .title-txt-container .txt-box {
   font-size: 18px;
   letter-spacing: -0.18px;
+}
+.event-detail-container .pink-solid-btn {
+  margin-top: 60px;
 }
 
 .event-content {
