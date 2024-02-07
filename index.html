@@ -24,12 +24,12 @@
             </a>
           </h1>
           <div class="header-nav-grp">
-            <button type="button" class="header-nav">상품</button>
-            <button type="button" class="header-nav">계약</button>
-            <button type="button" class="header-nav">보상</button>
+            <a href="index.html#nav01-section" class="header-nav">상품</a>
+            <a href="index.html#nav02-section" class="header-nav">계약</a>
+            <a href="index.html#nav03-section" class="header-nav">보상</a>
           </div>
           <div class="header-btn-grp">
-            <button type="button" class="header-btn">상담 신청</button>
+            <button type="button" onclick="location.href='consulting-main.html';" class="header-btn">상담 신청</button>
           </div>
         </div>
       </header>
@@ -135,7 +135,8 @@
           <!-- END 첫번째 섹션: 인트로 -->
 
           <!-- 두번째 섹션: 1. 상품 설명 -->
-          <section class="section detail-section">
+          <div id="nav01-section" class="section-blank"></div>
+          <section id="nav01-section" class="section detail-section">
             <div class="page-inner">
 
               <!-- 섹션 제목 -->
@@ -246,6 +247,7 @@
           <!-- END 두번째 섹션: 1. 상품 설명 -->
 
           <!-- 세번째 섹션: 2. 계약 설명 -->
+          <div id="nav02-section" class="section-blank"></div>
           <section class="section detail-section">
             <div class="page-inner">
 
@@ -356,6 +358,7 @@
           <!-- END 세번째 섹션: 2. 계약 설명 -->
 
           <!-- 네번째 섹션: 3. 보상 설명 -->
+          <div id="nav03-section" class="section-blank"></div>
           <section class="section detail-section">
             <div class="page-inner">
 
@@ -636,8 +639,7 @@
         </div>
       </div>
     </div>
-
-    <!-- <script src="assets/js/ui.js"></script> -->
+    <script src="assets/js/ui.js"></script>
     <script>
       // 이벤트 배너 슬라이드
       const swiperEventBanner = new Swiper("#swiper-event-banner", {
@@ -654,20 +656,6 @@
         $('.js-event-banner').removeClass('active');
         $(this).addClass('active');
       })
-    </script>
-    <script>
-      // 롤링 배너 복제본 생성
-      let roller = document.querySelector('.logo-boxes');
-      roller.id = 'roller1'; // 아이디 부여
-      let clone = roller.cloneNode(true)
-      // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
-      clone.id = 'roller2';
-      document.querySelector('.floating-logo-wrap').appendChild(clone); // wrap 하위 자식으로 부착
-      document.querySelector('#roller1').style.left = '0px';
-      document.querySelector('#roller2').style.left = document.querySelector('.logo-boxes').offsetWidth + 'px';
-      // offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
-      roller.classList.add('original');
-      clone.classList.add('clone');
     </script>
   </body>
 </html>

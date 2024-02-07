@@ -296,6 +296,10 @@ img {
   color: #5A5A5A;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-inner {
   margin: 0 auto;
   width: 95%;
@@ -401,6 +405,10 @@ img {
 }
 .fixed-btns .fixed-btn.type-dark:active {
   opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .page-inner {

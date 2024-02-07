@@ -1,6 +1,5 @@
 .intro-section {
-  padding: 43px 0;
-  margin-bottom: 15px;
+  padding-top: 43px;
 }
 
 .intro-title-wrap {
@@ -66,7 +65,7 @@
 
 .detail-section {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .detail-section .section-title-wrap {
   margin-bottom: 35px;
@@ -163,4 +162,9 @@
 
 .event-content.active {
   display: block;
+}
+
+.section-blank {
+  height: 80px;
+  width: 100%;
 }
