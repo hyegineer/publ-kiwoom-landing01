@@ -1,3 +1,15 @@
+function openModal(id) {
+  $('#' + id).addClass('active');
+  $('#' + id).children('.custom-modal').scrollTop(0);
+}
+
+function closeModal(id) {
+  $('#' + id).removeClass('active');
+}
+
+function allCloseModal() {
+  $('.modal-wrapper').removeClass('active');
+}
 /* =============================================== */
 /* 롤링 배너 */
 /* =============================================== */
@@ -17,3 +29,18 @@ document.querySelector('#roller2').style.left = document.querySelector('.logo-bo
 
 roller.classList.add('original');
 clone.classList.add('clone');
+function pageTopMove() {
+  $('html, body').animate({
+    scrollTop: '0'
+  }, 300);
+}
+
+$(window).on('scroll', function () {
+  console.log($(this).scrollTop());
+
+  if ($(this).scrollTop() > 100) {
+    $('.fixed-btn-wrapper').addClass('active');
+  } else {
+    $('.fixed-btn-wrapper').removeClass('active');
+  }
+})

@@ -26,7 +26,7 @@
           <div class="header-nav-grp">
             <a href="index.html#nav01-section" class="header-nav">상품</a>
             <a href="index.html#nav02-section" class="header-nav">계약</a>
-            <a href="index.html#nav03-section" class="header-nav">보상</a>
+            <a href="index.html#nav03-section" class="header-nav">보험금</a>
           </div>
           <div class="header-btn-grp">
             <button type="button" onclick="location.href='consulting-main.html';" class="header-btn">상담 신청</button>
@@ -45,23 +45,24 @@
             <div class="page-inner">
               <div class="intro-title-wrap">
                 <span class="sub-title">다우키움 그룹</span>
-                <h3 class="title">임직원 보험 상담</h3>
-                <p class="title-desc">키움에셋플래너에서 전담 관리합니다</p>
+                <h3 class="title">임직원 전용 보험 상담 서비스</h3>
+                <p class="title-desc">재무설계의 명가 ‘키움에셋플래너’에서 <br>전문적인 서비스를 제공 드립니다</p>
               </div>
               <div class="intro-content">
                 <img src="assets/images/img/img-intro.svg" alt="이미지" class="img">
                 <div class="benefit-list-grp">
                   <dl class="benefit-list">
                     <dt class="ttl">혜택 1.</dt>
-                    <dd class="desc"><span class="color-txt">전담관리</span>와 <span class="color-txt">마이데이터 보험 분석!</span></dd>
+                    <dd class="desc"><span class="color-txt">보험 전문가</span>를 통한 <span class="color-txt">1:1 상담 서비스 제공!</span>
+                    </dd>
                   </dl>
                   <dl class="benefit-list">
                     <dt class="ttl">혜택 2.</dt>
-                    <dd class="desc">카톡 채널로 받는 소식지 구독 <span class="color-txt">'핫이슈'</span></dd>
+                    <dd class="desc">카톡 채널로 받는 소식지 <span class="color-txt">'핫이슈'</span></dd>
                   </dl>
                   <dl class="benefit-list">
                     <dt class="ttl">혜택 3.</dt>
-                    <dd class="desc">상담 받고! <span class="color-txt">이벤트 참여</span>까지</dd>
+                    <dd class="desc">무료 상담 & 이벤트 참여를 통한 <span class="color-txt">상품권 증정</span></dd>
                   </dl>
                 </div>
               </div>
@@ -141,8 +142,7 @@
               <!-- 섹션 제목 -->
               <div class="title-wrap">
                 <div class="title-item">
-                  <h3 class="title">상담 신청하기</h3>
-                  <p class="title-desc">키움에셋플래너에서 전담 관리합니다</p>
+                  <h3 class="title">상담 <br>신청하기</h3>
                 </div>
               </div>
 
@@ -151,9 +151,9 @@
               <!-- 섹션 내용 -->
               <div class="section-content">
                 <ul class="check-txt-list-grp">
-                  <li class="check-txt-list"><span class="color-txt">내게 꼭 맞는 상품</span> 추천</li>
-                  <li class="check-txt-list"><span class="color-txt">마이데이터</span>를 통한 보험 분석</li>
-                  <li class="check-txt-list"><span class="color-txt">보험금 안내</span>와 <span class="color-txt">사후 관리</span>
+                  <li class="check-txt-list"><span class="color-txt">32개 생, 손보사</span> 상품 스크래핑</li>
+                  <li class="check-txt-list"><span class="color-txt">My Data</span>를 통한 보험 분석</li>
+                  <li class="check-txt-list"><span class="color-txt">내 보험금</span> 알아보기</span>
                   </li>
                 </ul>
                 <div class="gray-box">
@@ -169,7 +169,7 @@
                           <span class="color-txt">*</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <input type="text" placeholder="이름을 입력해주세요." class="form-inp">
+                          <input type="text" required name="username" placeholder="이름을 입력해주세요." class="form-inp">
                         </div>
                       </div>
 
@@ -182,7 +182,7 @@
                           <span class="color-txt">*</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <input type="text" placeholder="숫자만 입력해주세요." class="form-inp">
+                          <input type="text" required name="phone" placeholder="숫자만 입력해주세요." class="form-inp">
                         </div>
                       </div>
 
@@ -198,7 +198,7 @@
                         </label>
                         <div class="form-inp-wrap">
                           <div class="inp-wrap">
-                            <input type="text" placeholder="YYYY-MM-DD (보험나이)" class="form-inp">
+                            <input type="text" required name="birth" onKeyup="inputYMDNumber(this);" placeholder="YYYY-MM-DD (보험나이)" class="form-inp">
                             <img src="assets/images/icon/icon-cal.svg" alt="캘린더 아이콘" class="form-inp-icon type-cal">
                           </div>
                         </div>
@@ -215,12 +215,12 @@
                         <div class="form-inp-wrap">
                           <div class="checkbox-item-grp">
                             <label class="checkbox-item">
-                              <input type="radio" name="gender" class="checkbox-inp">
+                              <input type="radio" required name="gender" class="checkbox-inp">
                               <label class="checkbox"></label>
                               <span class="checkbox-txt">남자</span>
                             </label>
                             <label class="checkbox-item">
-                              <input type="radio" name="gender" class="checkbox-inp">
+                              <input type="radio" required name="gender" class="checkbox-inp">
                               <label class="checkbox"></label>
                               <span class="checkbox-txt">여자</span>
                             </label>
@@ -239,7 +239,7 @@
                           <span class="color-txt">*</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <select class="form-inp">
+                          <select css-select required name="location" class="form-inp">
                             <option value="">지역을 선택해주세요.</option>
                             <option value="경남">경남</option>
                             <option value="경북">경북</option>
@@ -270,8 +270,8 @@
                           <span class="txt">그룹명</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <select class="form-inp">
-                            <option value="">그룹을을 선택해주세요.</option>
+                          <select css-select class="form-inp">
+                            <option value="">그룹명을 선택해주세요.</option>
                             <option value="게티이미지코리아">게티이미지코리아</option>
                             <option value="다우기술">다우기술</option>
                             <option value="다우데이타">다우데이타</option>
@@ -305,7 +305,7 @@
                           <span class="txt">본인여부</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <select class="form-inp">
+                          <select css-select class="form-inp">
                             <option value="">본인여부를 선택해주세요.</option>
                             <option value="본인">본인</option>
                             <option value="가족">가족</option>
@@ -321,9 +321,9 @@
 
                   <!-- 동의 영역 -->
                   <div class="form-agree-container">
-                    <label class="checkbox-item">
-                      <input type="checkbox" class="checkbox-inp">
-                      <label class="checkbox"></label>
+                    <label for="required-agree" class="checkbox-item">
+                      <input id="required-agree" type="checkbox" class="checkbox-inp">
+                      <label for="required-agree" class="checkbox"></label>
                       <span class="checkbox-txt">[필수] 개인정보 수집 및 이용 동의</span>
                     </label>
                     <div class="agree-txt-box">
@@ -343,9 +343,9 @@
 
                   <!-- 동의 영역 -->
                   <div class="form-agree-container">
-                    <label class="checkbox-item">
-                      <input type="checkbox" class="checkbox-inp">
-                      <label class="checkbox"></label>
+                    <label for="choice-agree" class="checkbox-item">
+                      <input id="choice-agree" type="checkbox" class="checkbox-inp">
+                      <label for="choice-agree" class="checkbox"></label>
                       <span class="checkbox-txt">[선택] 마케팅 수신 및 활용 동의</span>
                     </label>
                     <div class="agree-txt-box">
@@ -392,7 +392,7 @@
 
                   <!-- 제출 버튼 영역 -->
                   <div class="form-btn-wrap">
-                    <button type="button" class="btn pink-solid-btn">상담 신청하기</button>
+                    <button type="button" onclick="apply();" class="btn pink-solid-btn">상담 신청하기</button>
                   </div>
 
                   <!-- END 제출 버튼 영역 -->
@@ -408,26 +408,210 @@
       </div>
 
       <!-- END 페이지 -->
+
+      <!-- 알럿: 필수 항목 안내 -->
+      <div id="alert-warning" class="modal-wrapper">
+        <div class="modal-overlay" onclick="closeModal('alert-warning');"></div>
+        <div class="custom-modal system-modal">
+          <div class="modal-icon">
+            <img src="assets/images/icon/ico-modal-bang.svg" alt="모달 아이콘" class="icon icon-32">
+          </div>
+          <div class="modal-content-wrap">
+            <h2 class="modal-ttl">안내사항</h2>
+            <div class="modal-content">
+              <p class="modal-desc">입력하지 않은 필수 항목이 있어요</p>
+            </div>
+          </div>
+          <div class="modal-btn-wrap">
+            <button type="button" onclick="closeModal('alert-warning');" class="btn gray-bd-btn">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 알럿: 필수 항목 안내 -->
+
+      <!-- 알럿: 개인정보 수집 및 이용 동의 -->
+      <div id="alert-agree" class="modal-wrapper">
+        <div class="modal-overlay" onclick="closeModal('alert-agree');"></div>
+        <div class="custom-modal system-modal">
+          <div class="modal-icon">
+            <img src="assets/images/icon/ico-modal-bang.svg" alt="모달 아이콘" class="icon icon-32">
+          </div>
+          <div class="modal-content-wrap">
+            <h2 class="modal-ttl">안내사항</h2>
+            <div class="modal-content">
+              <p class="modal-desc">개인정보 수집 및 이용에 동의해주세요.</p>
+            </div>
+          </div>
+          <div class="modal-btn-wrap">
+            <button type="button" onclick="closeModal('alert-agree');" class="btn gray-bd-btn">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 알럿: 개인정보 수집 및 이용 동의 -->
+
+      <!-- 알럿: 신청완료 1 -->
+      <div id="alert-complete" class="modal-wrapper">
+        <div class="modal-overlay" onclick="location.reload(true);"></div>
+        <div class="custom-modal system-modal">
+          <div class="modal-icon">
+            <img src="assets/images/icon/ico-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+          </div>
+          <div class="modal-content-wrap">
+            <h2 class="modal-ttl">신청 완료</h2>
+            <div class="modal-content">
+              <p class="modal-desc">정상 처리 되었습니다.</p>
+            </div>
+          </div>
+          <div class="modal-btn-wrap">
+            <button type="button" onclick="location.reload(true);" class="btn gray-bd-btn">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 알럿: 신청완료 1 -->
+
+      <!-- 알럿: 신청완료 2 -->
+      <div id="alert-complete-btns" class="modal-wrapper">
+        <div class="modal-overlay" onclick="location.reload(true);"></div>
+        <div class="custom-modal system-modal">
+          <div class="modal-icon">
+            <img src="assets/images/icon/ico-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+          </div>
+          <div class="modal-content-wrap">
+            <h2 class="modal-ttl">신청 완료</h2>
+            <div class="modal-content">
+              <p class="modal-desc">정상 처리 되었습니다.</p>
+              <div class="mydata-modal-content">
+                <div class="img-txt-wrap">
+                  <img src="assets/images/img/img-mydata-modal.png" alt="마이데이터 연동 이미지" class="img">
+                  <div class="txt-wrap">
+                    <h3 class="ttl">마이데이터 연동시,</h3>
+                    <p class="txt">고객님 보험 분석과 설계 상담이 <br>
+                      더욱 쉬워져요!</p>
+                  </div>
+                </div>
+                <div class="inner-btn-wrap">
+                  <div class="inner-btn-area">
+                    <span class="ttl">비회원이라면?</span>
+                    <button type="button" class="rounded-btn type-red">
+                      <span class="txt">상담신청</span>
+                      <img src="assets/images/icon/icon-arrow-sm-pink.svg" alt="화살표" class="icon">
+                    </button>
+                  </div>
+                  <div class="inner-btn-area">
+                    <span class="ttl">회원이라면?</span>
+                    <button type="button" class="rounded-btn type-blue">
+                      <span class="txt">My Data 연동</span>
+                      <img src="assets/images/icon/icon-arrow-sm-navy.svg" alt="화살표" class="icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-btn-wrap">
+            <button type="button" onclick="location.reload(true);" class="btn gray-bd-btn">닫기</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 알럿: 신청완료 2 -->
       <div class="fixed-btn-wrapper">
         <div class="fixed-btns">
-          <button type="button" class="fixed-btn type-dark">
+          <button type="button" class="fixed-btn type-dark" onclick="pageTopMove();">
             <img src="assets/images/icon/icon-fixed-top.svg" alt="위로 가기 아이콘" class="icon icon-top">
             <span class="txt">TOP</span>
           </button>
-          <button type="button" class="fixed-btn type-navy">
+          <a href="index.html#nav04-section" class="fixed-btn type-navy">
             <img src="assets/images/icon/icon-fixed-event.svg" alt="이벤트 아이콘" class="icon icon-event">
             <span class="txt">EVENT</span>
-          </button>
-          <button type="button" class="fixed-btn type-pink">
+          </a>
+          <button type="button" class="fixed-btn type-pink" onclick="location.href='consulting-main.html';">
             <img src="assets/images/icon/icon-fixed-bubbl.svg" alt="말풍선 아이콘" class="icon icon-bubbl">
             <span class="txt">상담신청</span>
           </button>
-          <button type="button" class="fixed-btn type-kakao">
+          <button type="button" class="fixed-btn type-kakao" onclick="location.href='http://pf.kakao.com/_AjliG/friend'" ;>
             <img src="assets/images/icon/icon-fixed-kakao.svg" alt="카카오채널 아이콘" class="icon">
           </button>
         </div>
       </div>
     </div>
     <script src="assets/js/ui.js"></script>
+    <script>
+      $('[css-select]').on('change', function() {
+        if ($(this).val()) {
+          $(this).css('color', '#333333');
+        } else {
+          $(this).css('color', 'rgba(51, 51, 51, 0.3)');
+        }
+      })
+      // 문자 불가, 하이픈 자동 입력 핸드폰 번호
+      $("input[name='phone']").keyup(function() {
+        $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
+      });
+      // 문자 불가, 하이픈 자동 입력 생년월일
+      function inputYMDNumber(obj) {
+        if (event.keyCode != 8) {
+          if (obj.value.replace(/[0-9 \-]/g, "").length == 0) {
+            let number = obj.value.replace(/[^0-9]/g, "");
+            let ymd = "";
+            if (number.length < 4) {
+              return number;
+            } else if (number.length < 6) {
+              ymd += number.substr(0, 4);
+              ymd += "-";
+              ymd += number.substr(4);
+            } else {
+              ymd += number.substr(0, 4);
+              ymd += "-";
+              ymd += number.substr(4, 2);
+              ymd += "-";
+              ymd += number.substr(6);
+            }
+            obj.value = ymd;
+          } else {
+            alert("숫자 이외의 값은 입력하실 수 없습니다.");
+            obj.value = obj.value.replace(/[^0-9 ^\-]/g, "");
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+      // 신청하기 유효성 체크
+      function apply() {
+        if ($('[name="username"]').val() == '') {
+          openModal('alert-warning');
+          return false;
+        }
+        if ($('[name="phone"]').val() == '') {
+          openModal('alert-warning');
+          return false;
+        }
+        if ($('[name="birth"]').val() == '') {
+          openModal('alert-warning');
+          return false;
+        }
+        if ($('[name="gender"]').val() == '') {
+          openModal('alert-warning');
+          return false;
+        }
+        if ($('[name="location"]').val() == '') {
+          openModal('alert-warning');
+          return false;
+        }
+        if ($('#required-agree').prop('checked') == false) {
+          openModal('alert-agree');
+          return false;
+        }
+        if ($('#choice-agree').prop('checked') == false) {
+          openModal('alert-complete');
+          return false;
+        }
+        openModal('alert-complete-btns');
+      }
+    </script>
   </body>
 </html>
