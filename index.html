@@ -144,10 +144,10 @@
                 <div class="title-wrap">
                   <h3 class="title">상품</h3>
                 </div>
-                <div class="tabs">
-                  <button type="button" class="tab active">장기 보험</button>
-                  <button type="button" class="tab">자동차</button>
-                  <button type="button" class="tab">실손 의료보험</button>
+                <div id="tabs01" class="tabs">
+                  <button type="button" data-tab="tab01-01" class="tab active">장기 보험</button>
+                  <button type="button" data-tab="tab01-02" class="tab">자동차</button>
+                  <button type="button" data-tab="tab01-03" class="tab">실손 의료보험</button>
                 </div>
               </div>
 
@@ -157,12 +157,12 @@
               <div class="section-content">
 
                 <!-- 탭 내용 모음 -->
-                <div class="tab-contents">
+                <div id="tab01-contents" class="tab-contents">
 
                   <!-- 1-1. 장기 보험 내용 -->
 
                   <!-- TODO: 탭 누르면 active 클래스가 적용됩니다. -->
-                  <div class="tab-content active">
+                  <div id="tab01-01" class="tab-content active">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail01-01.png" alt="아이콘" class="icon icon-title">
@@ -184,7 +184,7 @@
                   <!-- END 1-1. 장기 보험 내용 -->
 
                   <!-- 1-2. 자동차 내용 -->
-                  <div class="tab-content">
+                  <div id="tab01-02"class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail01-02.png" alt="아이콘" class="icon icon-title">
@@ -204,7 +204,7 @@
                   <!-- END 1-2. 자동차 내용 -->
 
                   <!-- 1-3. 실손 의료보험 내용 -->
-                  <div class="tab-content">
+                  <div id="tab01-03" class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail01-03.png" alt="아이콘" class="icon icon-title">
@@ -256,10 +256,10 @@
                 <div class="title-wrap">
                   <h3 class="title">계약</h3>
                 </div>
-                <div class="tabs">
-                  <button type="button" class="tab active">보험 분석</button>
-                  <button type="button" class="tab">갱신</button>
-                  <button type="button" class="tab">계약 관리</button>
+                <div id="tabs02" class="tabs">
+                  <button type="button" data-tab="tab02-01" class="tab active">보험 분석</button>
+                  <button type="button" data-tab="tab02-02" class="tab">갱신</button>
+                  <button type="button" data-tab="tab02-03" class="tab">계약 관리</button>
                 </div>
               </div>
 
@@ -269,12 +269,12 @@
               <div class="section-content">
 
                 <!-- 탭 내용 모음 -->
-                <div class="tab-contents">
+                <div id="tab02-contents" class="tab-contents">
 
                   <!-- 2-1. 보험 분석 내용 -->
 
                   <!-- TODO: 탭 누르면 active 클래스가 적용됩니다. -->
-                  <div class="tab-content active">
+                  <div id="tab02-01" class="tab-content active">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail02-01.png" alt="아이콘" class="icon icon-title">
@@ -294,7 +294,7 @@
                   <!-- END 2-1. 보험 분석 내용 -->
 
                   <!-- 2-2. 갱신 내용 -->
-                  <div class="tab-content">
+                  <div id="tab02-02" class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail02-02.png" alt="아이콘" class="icon icon-title">
@@ -315,7 +315,7 @@
                   <!-- END 2-2. 갱신 내용 -->
 
                   <!-- 2-3. 계약 관리 내용 -->
-                  <div class="tab-content">
+                  <div id="tab02-03" class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail02-03.png" alt="아이콘" class="icon icon-title">
@@ -367,10 +367,10 @@
                 <div class="title-wrap">
                   <h3 class="title">보상</h3>
                 </div>
-                <div class="tabs">
-                  <button type="button" class="tab active">보상 지급</button>
-                  <button type="button" class="tab">보험금</button>
-                  <button type="button" class="tab">청구 서류</button>
+                <div id="tabs03" class="tabs">
+                  <button type="button" data-tab="tab03-01" class="tab active">보상 지급</button>
+                  <button type="button" data-tab="tab03-02" class="tab">보험금</button>
+                  <button type="button" data-tab="tab03-03" class="tab">청구 서류</button>
                 </div>
               </div>
 
@@ -380,12 +380,12 @@
               <div class="section-content">
 
                 <!-- 탭 내용 모음 -->
-                <div class="tab-contents">
+                <div id="tab03-contents" class="tab-contents">
 
                   <!-- 3-1. 보상 지급 내용 -->
 
                   <!-- TODO: 탭 누르면 active 클래스가 적용됩니다. -->
-                  <div class="tab-content active">
+                  <div id="tab03-01" class="tab-content active">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail03-01.png" alt="아이콘" class="icon icon-title">
@@ -407,7 +407,7 @@
                   <!-- END 3-1. 보상 지급 내용 -->
 
                   <!-- 3-2. 보험금 내용 -->
-                  <div class="tab-content">
+                  <div id="tab03-02" class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail03-02.png" alt="아이콘" class="icon icon-title">
@@ -428,7 +428,7 @@
                   <!-- END 3-2. 보험금 내용 -->
 
                   <!-- 3-3. 청구 서류 내용 -->
-                  <div class="tab-content">
+                  <div id="tab03-03" class="tab-content">
                     <div class="detail-content-container">
                       <div class="detail-title">
                         <img src="assets/images/icon/icon-detail03-02.png" alt="아이콘" class="icon icon-title">
@@ -655,6 +655,19 @@
       $('.js-event-banner').on('click', function() {
         $('.js-event-banner').removeClass('active');
         $(this).addClass('active');
+      })
+
+      // 탭 구현
+      $('[data-tab]').on('click', function () {
+        var tabs = $(this).parent('.tabs').attr('id');
+        var content = $(this).attr('data-tab');
+        var contents = $(`#${content}`).parent('.tab-contents').attr('id');
+
+        $(`#${tabs} [data-tab]`).addClass('active');
+        $(this).addClass('active');
+        
+        $(`#${contents} .tab-content`).removeClass('active');
+        $(`#${content}`).addClass('active');
       })
     </script>
   </body>
