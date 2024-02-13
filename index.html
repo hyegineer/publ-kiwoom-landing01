@@ -663,7 +663,7 @@
         var content = $(this).attr('data-tab');
         var contents = $(`#${content}`).parent('.tab-contents').attr('id');
 
-        $(`#${tabs} [data-tab]`).addClass('active');
+        $(`#${tabs} [data-tab]`).removeClass('active');
         $(this).addClass('active');
         
         $(`#${contents} .tab-content`).removeClass('active');
