@@ -135,6 +135,12 @@ select.form-inp {
   background-size: 12px;
   color: rgba(51, 51, 51, 0.3);
 }
+[css-select] option {
+    color: #333;
+}
+[css-select] option:first-child {
+    color: rgba(51, 51, 51, 0.3);
+}
 
 .form-agree-container .checkbox-item {
   display: flex;
