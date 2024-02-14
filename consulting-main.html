@@ -176,9 +176,7 @@
 
               <!-- 섹션 제목 -->
               <div class="title-wrap">
-                <div class="title-item">
-                  <h3 class="title">상담 <br>신청하기</h3>
-                </div>
+                <h3 class="title">상담 신청하기</h3>
               </div>
 
               <!-- END 섹션 제목 -->
@@ -232,10 +230,7 @@
                           <span class="color-txt">*</span>
                         </label>
                         <div class="form-inp-wrap">
-                          <div class="inp-wrap">
-                            <input type="text" required name="birth" onKeyup="inputYMDNumber(this);" placeholder="YYYY-MM-DD (보험나이)" class="form-inp">
-                            <img src="assets/images/icon/icon-cal.svg" alt="캘린더 아이콘" class="form-inp-icon type-cal">
-                          </div>
+                          <input type="text" required name="birth" onKeyup="inputYMDNumber(this);" placeholder="YYYY-MM-DD (보험나이)" class="form-inp">
                         </div>
                       </div>
 
@@ -249,14 +244,14 @@
                         </label>
                         <div class="form-inp-wrap">
                           <div class="checkbox-item-grp">
-                            <label class="checkbox-item">
-                              <input type="radio" required name="gender" class="checkbox-inp">
-                              <label class="checkbox"></label>
+                            <label for="male" class="checkbox-item">
+                              <input id="male" type="radio" required name="gender" class="checkbox-inp">
+                              <label for="male" class="checkbox"></label>
                               <span class="checkbox-txt">남자</span>
                             </label>
-                            <label class="checkbox-item">
-                              <input type="radio" required name="gender" class="checkbox-inp">
-                              <label class="checkbox"></label>
+                            <label for="femali" class="checkbox-item">
+                              <input id="female" type="radio" required name="gender" class="checkbox-inp">
+                              <label for="female" class="checkbox"></label>
                               <span class="checkbox-txt">여자</span>
                             </label>
                           </div>
